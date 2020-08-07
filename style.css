@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    width: 1000px;
+    height: 563px;
+    position: relative;
+    overflow: hidden;
+}
+
+.videoPlayer {
+    width: 100%;
+    height: 100%;
+}
+
+.video-nav {
+    height: 80px;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    /* transform: translateY(100%); */
+    transition: all .2s ease-in-out;
+}
+
+.video:hover .video-nav {
+    transform: translateY(0);
+}
+
+.control-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.control-btn {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.pause-btn {
+    padding: 5px;
+}
+
+.active {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.control-btn-box {}
+
+.control-btn:hover {
+    transform: scale(1.1);
+}
+
+.timeline {
+    width: 100%;
+    height: 10px;
+    background-color: rgba(114, 113, 113, 0.7);
+}
+
+.timeline-juice {
+    height: 100%;
+    background-color: rgb(182, 182, 182);
+}
+
+.timebox {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.fullscreen-btn {
+    width: 20px;
+    height: 20px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.fullscreen-btn:hover {
+    transform: scale(1.1);
+}
+
+.left-controls {
+    display: flex;
+    align-items: center;
+}
+
+.right-controls {
+    display: flex;
+    align-items: center;
+}
+
+.volume-box {
+    position: relative;
+
+}
+
+.volume-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.volume-icon:hover {
+    transform: scale(1.1);
+}
+
+.volume-line {
+    position: absolute;
+    width: 120px;
+    height: 10px;
+    background-color: rgba(114, 113, 113, 0.7);
+    top: 28%;
+    left: -130px;
+    transform: translateX(300%);
+    transition: all .3s ease-in-out;
+}
+
+.volume-line-juice {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(182, 182, 182);
+}

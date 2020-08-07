@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>VideoPlayer</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="video">
+            <video class="videoPlayer" src="Rain.mp4"></video>
+            <nav class="video-nav">
+                <div class="timeline">
+                    <div class="timeline-juice"></div>
+                </div>
+
+                <div class="control-line">
+                    <div class="left-controls">
+                        <div class="control-btn-box">
+                            <img class="control-btn pause-btn hide" src="pause.png" alt="pause">
+                            <img class="control-btn play-btn" src="play.png" alt="play">
+                        </div>
+                        <div class="timebox">
+                            <span id="currenttime"></span>
+                            <span>/</span>
+                            <span id="durationtime"></span>
+                        </div>
+                    </div>
+                    <div class="right-controls">
+                        <div class="volume-box">
+                            <div><img class="volume-icon" src="volume.png" alt="volume"></div>
+                            <div class="volume-line">
+                                <div class="volume-line-juice"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="fullscreen-btn" src="fullscreen.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
